@@ -12,6 +12,6 @@ jobs:
         VEM: ${{ github.actor }}
         REPO: ${{ github.repository }}
       run: |
-        curl -X POST -H "Content-Type:
-        -d "{\"content\": \"$VEM pus
+        curl -X POST -H "Content-Type: application/json" \
+        -d "{\"content\": \"$VEM pushade till $REPO\"}" \
         "$WEBHOOK"
