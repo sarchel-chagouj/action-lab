@@ -8,7 +8,7 @@ jobs:
     steps:
     - name: Skicka meddelande
       env:
-        WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        WEBHOOK: ${{ secrets.DISCORD
         VEM: ${{ github.actor }}
         REPO: ${{ github.repository }}
       run: |
